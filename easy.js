@@ -5,3 +5,18 @@ system to reflect which exercise will be promoted that day.
  Write a function that will take as an input the name of an exercise 
  and console log a message like Today's exercise: running
  */
+
+ function exerciseOfday() {
+
+ return function(exercise){
+    console.log(`Today's exercise: ${exercise}`)
+
+ };
+ }
+
+const exercise = exerciseOfday();
+exercise('Running')
+exercise('Swimming')
+exercise('Dancing')
+exercise('Fencing')
+
